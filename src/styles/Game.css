@@ -1,0 +1,102 @@
+/* styles/Game.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .game-board {
+    margin-bottom: 20px;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .square-winning {
+    background-color: #4CAF50 !important;
+    color: white;
+  }
+  
+  .status {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .game-info, .game-scores {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .game-info button, .container button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .game-info button:hover, .container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .moves-list {
+    list-style: none;
+    padding: 0;
+    max-height: 200px; /* Adjust height as necessary */
+    overflow-y: auto; /* Make it scrollable */
+  }
+  
+  .moves-list li {
+    margin-bottom: 5px;
+  }
+  
+  .game-scores h3 {
+    margin-bottom: 10px;
+  }
+  
+  .game-scores p {
+    margin: 5px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .game-info, .game-scores {
+      margin-top: 0;
+    }
+  
+    .game-board, .game-info, .game-scores {
+      margin-right: 20px;
+    }
+  }
+  
